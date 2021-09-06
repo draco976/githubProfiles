@@ -5,6 +5,7 @@ from django.forms import fields
 
 class RegistrationForm(UserCreationForm):
     first_name = forms.CharField(required=True)
+    last_name = forms.CharField(required=False)
 
     class Meta:
         model = User
@@ -13,7 +14,8 @@ class RegistrationForm(UserCreationForm):
             'password1',
             'password2',
             'first_name',
-            'last_name'
+            'last_name',
+            
         )
 
     def save(self, commit=True):

@@ -2,3 +2,4 @@ https://stackoverflow.com/questions/15209978/where-to-store-secret-keys-django/6
 https://www.youtube.com/watch?v=609pxEMfung&list=PLw02n0FEB3E3VSHjyYMcFadtQORvl1Ssj
 https://learndjango.com/tutorials/django-login-and-logout-tutorial
 https://stackoverflow.com/questions/2906582/how-to-create-an-html-button-that-acts-like-a-link
+https://simpleisbetterthancomplex.com/tutorial/2016/07/22/how-to-extend-django-user-model.html
