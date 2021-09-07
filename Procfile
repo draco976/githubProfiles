@@ -1,1 +1,1 @@
-web: gunicorn githubProfiles.wsgi
+web: gunicorn githubProfiles.wsgi --log-file -
