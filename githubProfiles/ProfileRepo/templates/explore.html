@@ -1,0 +1,16 @@
+{% extends 'profile_base.html' %}
+
+{% block title %}Explore{% endblock %}
+
+{% block content %}
+<br>
+<ul>
+    {% for user in user_list %}
+        {% if current_user_id != user.id %}
+            <li><a href="{% url 'profile' user.id %}">{{user.username}}</a></li>
+        {% endif %}
+    {% endfor %}
+</ul>
+  
+
+{% endblock %}

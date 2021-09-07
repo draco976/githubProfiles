@@ -8,6 +8,9 @@
 <body>
   <h4><center>Built by 200050050 200050115</center></h4>
   <h1><center>Welcome to Github Profiles!</center></h1>
+  <p><a href="{% url 'profile' current_user_id %}">My Profile</a></p>
+  <p><a href="{% url 'explore' %}">Explore</a></p>
+  <p><a href="{% url 'logout' %}">Log Out</a></p>
   <main>
     {% block content %}
     {% endblock %}
