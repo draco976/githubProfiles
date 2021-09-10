@@ -1,4 +1,5 @@
 <!-- templates/base.html -->
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,9 +7,8 @@
   <title>{% block title %}Django Auth Tutorial{% endblock %}</title>
 </head>
 <body>
-  {% load static %}
   <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
-  <h4><center>Built by 200050050 200050115</center></h4>
+  <h3><center>Built by 200050050 200050115</center></h4>
   <h1><center>Welcome to Github Profiles!</center></h1>
   <main>
     {% block content %}
