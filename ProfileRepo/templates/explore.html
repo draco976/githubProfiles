@@ -4,13 +4,22 @@
 
 {% block content %}
 <br>
-<ul>
-    {% for user in user_list %}
-        {% if current_user_id != user.id %}
-            <li><a href="{% url 'profile' user.id %}">{{user.username}}</a></li>
-        {% endif %}
-    {% endfor %}
-</ul>
+<br>
+<br>
+
+<div class="container-sm">
+    <h2> Explore </h2>
+    <ul>
+        {% for user in user_list %}
+            {% if current_user_id != user.id %}
+                <br>
+                <li><a href="{% url 'profile' user.id %}" class="btn btn-outline-primary" role="button" >{{user.username}}</a></li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+
+</div>
+
   
 
 {% endblock %}

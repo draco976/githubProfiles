@@ -7,9 +7,13 @@
 <br>
 <br>
 
+<div class="container-sm">
 <h2>Register</h2>
+<br>
 <form method='POST'> {% csrf_token %}
     {{ form.as_p }}
-    <button type='submit'>Register</button>
+
+    <button type='submit' class="btn btn-primary" role="button">Register</button>
 </form>
+</div>
 {% endblock %}

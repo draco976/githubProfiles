@@ -7,11 +7,16 @@
 <br>
 <br>
 <br>
+<div class="container-sm">
+
 <h2>Login to Github Profiles</h2>
+<br>
 <form method="post">
   {% csrf_token %}
   {{ form.as_p }}
-  <button type="submit">Log In</button>
+  <button type="submit" class="btn btn-primary" role="button">Log In</button>
   
 </form>
+
+</div>
 {% endblock %}

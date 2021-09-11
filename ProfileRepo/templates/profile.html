@@ -8,16 +8,24 @@
 <br>
 <br>
 
-<h2> {{user.first_name}} {{user.last_name}} (@{{user.username}}) </h2>
-<i>{{user.profile.followers}} followers </i>
-<br>
-<i>Profile Last Updated : {{user.profile.last_update_time}} </i> <a href="{% url 'update' user.id %}"> (Update Now)</a>
+<div class='container-sm'>
+    <h2> {{user.first_name}} {{user.last_name}} (@{{user.username}}) </h2>
+    <p>
+        <i>{{user.profile.followers}} followers </i>
+    <br>
+    <i>Profile Last Updated : {{user.profile.last_update_time}} </i> <a href="{% url 'update' user.id %}"> (Update Now)</a>
 
 
-<ul>
-    {% for repo in user.profile.repository_set.all %}
-        <li>{{repo.name}} - {{repo.num_stars}} stars</li>
-    {% endfor %}
-</ul>
+    <ul>
+        {% for repo in user.profile.repository_set.all %}
+            <li style="font-family: 'monaco', monospace;">{{repo.name}} - {{repo.num_stars}} stars</li>
+        {% endfor %}
+    </ul>
+    </p>
+    
+
+</div>
+
+
   
 {% endblock %}
