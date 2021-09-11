@@ -5,3 +5,5 @@ https://stackoverflow.com/questions/2906582/how-to-create-an-html-button-that-ac
 https://simpleisbetterthancomplex.com/tutorial/2016/07/22/how-to-extend-django-user-model.html
 https://www.w3schools.com/css/css_font_style.asp
 https://docs.djangoproject.com/en/3.2/intro/tutorial06/
+https://stackoverflow.com/questions/710089/how-do-i-make-an-html-link-look-like-a-button
+https://tympanus.net/codrops/2012/11/02/heading-set-styling-with-css/

@@ -8,8 +8,13 @@
 </head>
 <body>
   <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
-  <h3><center>Built by 200050050 200050115</center></h4>
+  <h3><center>Built by 200050050 200050115</center></h3>
   <h1><center>Welcome to Github Profiles!</center></h1>
+  <br>
+  <br>
+  <center><a href="{% url 'login' %}" class="button">Log In</a>
+    <a href="{% url 'register' %}" class="button">Register</a></center>
+  
   <main>
     {% block content %}
     {% endblock %}
