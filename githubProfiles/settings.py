@@ -138,8 +138,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-# if DEBUG == False :
-#     STATIC_ROOT = BASE_DIR / 'static'
+if DEBUG == False :
+    STATIC_ROOT = BASE_DIR / 'static'
 
 STATICFILES_DIRS = [
     str(BASE_DIR.joinpath('static'))
